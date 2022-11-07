@@ -1,0 +1,108 @@
+<?php //%255Bb7804e92be4d1b934495145d45c88340%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'val' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT v0_.id AS id_0, v0_.no AS no_1, v0_.video AS video_2, v0_.image AS image_3, v0_.description AS description_4, v0_.piece AS piece_5, v0_.id_etablissement AS id_etablissement_6, v0_.id_formation AS id_formation_7, v0_.id_promotion AS id_promotion_8, v0_.id_semestre AS id_semestre_9, v0_.id_modulee AS id_modulee_10, v0_.id_element AS id_element_11, v0_.slug AS slug_12, v0_.id_module_id AS id_module_id_13 FROM video v0_ WHERE v0_.slug LIKE ? LIMIT 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'v' => 'App\\Entity\\Video',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'no_1' => 'no',
+                    'video_2' => 'video',
+                    'image_3' => 'image',
+                    'description_4' => 'description',
+                    'piece_5' => 'piece',
+                    'id_etablissement_6' => 'id_etablissement',
+                    'id_formation_7' => 'id_formation',
+                    'id_promotion_8' => 'id_promotion',
+                    'id_semestre_9' => 'id_semestre',
+                    'id_modulee_10' => 'id_modulee',
+                    'id_element_11' => 'id_element',
+                    'slug_12' => 'slug',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'id_module_id_13' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'v' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'id_module_id_13' => 'id_module_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'v',
+                    'no_1' => 'v',
+                    'video_2' => 'v',
+                    'image_3' => 'v',
+                    'description_4' => 'v',
+                    'piece_5' => 'v',
+                    'id_etablissement_6' => 'v',
+                    'id_formation_7' => 'v',
+                    'id_promotion_8' => 'v',
+                    'id_semestre_9' => 'v',
+                    'id_modulee_10' => 'v',
+                    'id_element_11' => 'v',
+                    'slug_12' => 'v',
+                    'id_module_id_13' => 'v',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Video',
+                    'no_1' => 'App\\Entity\\Video',
+                    'video_2' => 'App\\Entity\\Video',
+                    'image_3' => 'App\\Entity\\Video',
+                    'description_4' => 'App\\Entity\\Video',
+                    'piece_5' => 'App\\Entity\\Video',
+                    'id_etablissement_6' => 'App\\Entity\\Video',
+                    'id_formation_7' => 'App\\Entity\\Video',
+                    'id_promotion_8' => 'App\\Entity\\Video',
+                    'id_semestre_9' => 'App\\Entity\\Video',
+                    'id_modulee_10' => 'App\\Entity\\Video',
+                    'id_element_11' => 'App\\Entity\\Video',
+                    'slug_12' => 'App\\Entity\\Video',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,56 @@
+.logo{
+      position: absolute;
+      left: 15px;
+      top: 30px;
+      height: 100px;
+      width: 165px;
+   } 
+
+  .authentification{
+    background: rgba(0, 0, 0, .44);
+    padding: 15px 20px;
+    position: absolute;
+    top: 32%;
+    right: 20px;
+    width: 180px;
+    font-size: 13px;
+    text-align: center;
+    border-radius:  3px 3px 0px 0px;
+  }
+  .form{
+    background: rgba(0, 0, 0, .44);
+    padding: 15px 20px;
+    position: absolute;
+    top: 39%;
+    right: 20px;
+    left: 20px;
+    border-radius:  3px 0px 3px 3px;
+
+  }
+
+  .connexion{
+    background-color: #137f8c;
+    border-color: rgba(0, 0, 0, .31);
+    color: white;
+    border-radius: 0px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    float: right;
+    width: 134px;
+  }
+.password{
+    margin: 20px 0px;
+  }
+label{
+    color: hsla(0, 0%, 100%, .67);
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+.form-control{
+  font-size: 12px;
+  height: 40px;
+  border-radius: 0px;
+}
+ 

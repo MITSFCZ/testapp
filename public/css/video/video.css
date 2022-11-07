@@ -1,0 +1,201 @@
+
+
+
+
+body{
+
+    /*background-color: #ddd;*/
+
+}
+
+/* --------------------------------------- video page --------------------------------------------- */
+
+
+
+.p-description-video{
+
+    margin-top : 8px;
+
+    font-size: 14px;
+
+}
+
+.card-header{
+
+    background-color:  #002147;
+
+    height: 50px;
+
+}
+
+.piece-joint{
+
+    position: absolute;
+
+    left: 10;
+
+    color: white;
+
+}
+
+.accordian-button{
+
+
+
+    position: absolute;
+
+    right: 7px;
+
+    top : 6px;
+
+
+
+}
+
+
+
+.enseignant{
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    font-size: 11px;
+
+    color:#8c8c8c;
+
+}
+
+.enseignant i,.time i{
+
+    color:  #002147;
+
+    margin-right:  3px;
+
+}
+
+
+
+.time{
+
+    position: absolute;
+
+    bottom: 0;
+
+    right: 15px;
+
+    font-size: 11px;
+
+    color:#8c8c8c;
+
+}
+
+
+
+.card-video a{
+
+    text-decoration: none;
+
+    color:  #002147 ;
+
+}
+
+
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link{
+
+    /* padding-right: 0;
+
+    padding-left:  0; */
+
+    font-weight: bold;
+
+    font-size: 13.3px;
+
+}
+
+.navbar-brand{
+
+    margin-right: 0.6rem; 
+
+}
+
+.fa-graduation-cap{
+
+    margin-right: 0px;
+
+    font-size: 28px;
+
+    color: white;
+
+   
+
+}
+
+
+
+.commantaire{
+
+    margin-top: 20px;
+
+}
+
+.commantaire .card{
+
+    border: 1px solid #b15682;
+
+}
+
+
+
+.card-header-commentaire{
+
+    background: #b15682;
+
+}
+
+
+
+.card-header-pieces-jointe{
+
+    background: #5090C1;
+
+}
+
+.piece-joint-accordion .card{
+
+      border: 1px solid #5090C1;
+
+}
+
+
+
+.card-header:first-child {
+
+    border-radius:0px;
+
+}
+
+
+
+.card-body{
+
+    color:#403e3e;
+
+    font-size: 12px
+
+}
+
+
+
+.icon-file{
+
+    font-size: 17px;
+
+     margin-top: 4px; 
+
+}

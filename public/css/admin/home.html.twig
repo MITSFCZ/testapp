@@ -1,0 +1,181 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+ <link rel="stylesheet"  href="{{ asset('css/admin/home.css') }}" >
+{% endblock %}
+
+{% block body %}
+
+
+<div class="body" style="">
+ <img src="{{ asset('back2.png') }}" style=" z-index:10;  height:100vh; background-cover:center; width:100%; position:absolute; height:100%; bottom:0; top:0; right:0; left:0; width:100%;">
+ 
+{#  </div>
+
+ <div style="z-index:9999; position:relative;"> #}
+
+{# <div class="example-wrapper">
+
+    
+    <nav class="navbar navbar-expand-lg ">
+      <img src="{{ asset('uploads/logoWW.png') }}" class="logo" />
+      <div class="container">
+
+        <a class="navbar-brand" href="#"><i class="fas fa-bars"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{username}}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{path('app_logout')}}">se deconnecter</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</div> #}
+
+   <div class="" style="padding:11px; background-color:white;  border-bottom: 3px solid #2c3e50; position:relative;">
+      <div class="container">
+            <div style="display:inline-block"> 
+               <a href="{{path('app_logout')}}"><img src="{{ asset('profile.png') }}" style="height:45px;"></a>
+            </div>
+
+            <div style="float:right;"> 
+              <a  href="{{path('home')}}"><img src="{{ asset('settings.png') }}" style="height:45px;"></a>
+            </div>
+            <div   style="position:absolute; left:50%; top:25%; font-weight:bold; border:1px solid #2c3e50; 
+                   padding:6px 10px; border-radius: 15px 0px 15px 0px; color:#2c3e50;">
+               {{ username}}
+            </div>
+      </div>
+   </div>
+
+     {# ------------------------------------------------------------------------ #}
+
+     <div class="container" style="height: 91%; display: flex; justify-content: center; margin-top: 2%;">
+ 
+
+
+       <div class="form-upload">
+       
+      
+            <form  method="post" action="{{ path('info_piece') }}" enctype="multipart/form-data" name="myForm">
+
+                
+                <div class="alert alert-danger errors" role="alert" style="">
+                    This is a primary alert—check it out!
+                </div>
+
+                 <div class="select">
+                    <select class="js-example-basic-single" name="Etablissement" id="Etablissement">
+                      <option value="choix">Choix Etablissement...</option> 
+                    </select>
+                </div>
+
+                 <div class="select">
+                    <select class="js-example-basic-single" name="Formation" id="Formation" >
+                      {# <option value="AL">Choix formation...</option> #}
+                    </select>
+                </div>
+
+                 <div class="select">
+                    <select class="js-example-basic-single" name="Promotion" id="Promotion" >
+                     {#  <option value="AL">Choix Promotion...</option> #}
+                    </select>
+                </div>
+
+                <div class="select">
+                    <select class="js-example-basic-single" name="Semestre" id="Semestre">
+                      {# <option value="AL">Choix Semester...</option> #}
+                    </select>
+                </div>
+
+                <div class="select">
+                    <select class="js-example-basic-single" name="Module" id="Module">
+                      {# <option value="AL">Choix Module...</option> #}
+                    </select>
+                </div>
+
+                 <div class="select">
+                    <select class="js-example-basic-single" name="Element" id="Element">
+                      {#  <option value="AL">Choix Eelement...</option> #}
+                    </select>
+                </div>
+
+
+
+                {#Select image to upload:#}
+                {#<input type="file" name="fileToUpload" id="fileToUpload">#}
+                {# <label for="files">Select files:</label> #}
+                {# <input type="file" id="files" name="files[file][]" multiple><br><br> #}
+                {# 
+                <div class="fileUpload blue-btn btn width100">
+                    <span> <i class="fas fa-upload"></i> Selectionner video / thumbnail </span>
+                    {# <input type="file" class="uploadlogo" /> #}
+                    {# <input type="file" id="files" class="uploadlogo" name="files[file][]" multiple><br><br>
+                </div> #} 
+
+
+               
+
+                {# <div class="fileUpload blue-btn btn width100">
+                    <span>  <i class="fas fa-mouse-pointer"></i> Sélectionner une image</span>
+                    <input type="file" name="fileToUpload" class="uploadlogo" />
+                </div> #}
+                 
+                <div class="fileUpload blue-btn btn width100">
+                    <span> <i class="fas fa-mouse-pointer"></i>  Sélectionner une video</span>
+                    <input type="file" name="videoToUpload" class="uploadlogo" />
+                </div>
+
+                 <div class="fileUpload blue-btn btn width100">
+                    <span> <i class="fas fa-mouse-pointer"></i> Selectionner des fichiers </span>
+                    <input type="file" class="uploadlogo" />
+                    <input type="file" id="files" class="uploadlogo" name="files[file][]" multiple><br><br>
+                </div> 
+                <div class="form-group text-area">
+                    <textarea placeholder="Titre" class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                
+                
+
+                {# Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit"> #}
+
+
+
+
+                <button type="submit" class="btn btn-outline-success submit-button">
+                      <i class="fas fa-upload"></i> Téleverser 
+               </button>
+            </form>
+
+    </div>
+
+     
+     </div>
+
+     </div>
+
+{% endblock %}
+
+
