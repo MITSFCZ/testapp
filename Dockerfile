@@ -1,4 +1,4 @@
-FROM 685288883234.dkr.ecr.eu-west-1.amazonaws.com/fcz-symfony:1.2
+FROM 639635240310.dkr.ecr.eu-west-1.amazonaws.com/fcz-symfony:1.2
 
 COPY ./ /var/www/project/
 
