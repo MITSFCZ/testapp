@@ -1,4 +1,3 @@
-
 PROJECT_NAME=$1
 TAG=$2
 DATABASE_NAME=$1
@@ -36,7 +35,7 @@ spec:
           value: XtFc;s#2-sLMx}dq!
         - name: DATABASE_URL
           value: "mysql://admin:XtFc;s%232-sLMx}dq!@fcz-apps-rds-master.chlyq6uxnmog.eu-west-1.rds.amazonaws.com:3306/$DATABASE_NAME"
-        image: 685288883234.dkr.ecr.eu-west-1.amazonaws.com/$PROJECT_NAME:$TAG
+        image: 639635240310.dkr.ecr.eu-west-1.amazonaws.com/$PROJECT_NAME:$TAG
         imagePullPolicy: Always
         name: $PROJECT_NAME
         ports:
